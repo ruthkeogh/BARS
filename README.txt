@@ -25,16 +25,6 @@ Saves parameter estimates, covariance matrices, AICs, knot positions from all mo
 1000 simulated data sets are used.
 
 ############
-compile_results.R
-############
-
-Summarises simulation results in a number of ways:
-- calculates absolute and squared difference between estimated and true survival/hazard curves under flex surv models with 0-1 internal knots.
-- identifies the best fitting flex surv model in each simulated data set.
-- plots estimated survival/hazard curves from 1000 simulations (from the best fitting model) for comparison with the true curves.
-- calculates coverage based on the best fitting model in each simulated data set. 
-
-############
 optim_0knot.R, optim_1knot.R, ..., option_10knot.R
 ############
 
@@ -49,3 +39,13 @@ Simulates data using sim_data.R.
 Fits flexible parametric survival models with 0,1,2,...,10 internal knots using both flexsurvspline and optim (to do this it refers to the files optim_0knot.R etc).
 Saves parameter estimates, covariance matrices, AICs, knot positions from all models. 
 1000 simulated data sets are used.
+
+############
+compile_results.R
+############
+
+Summarises simulation results in a number of ways:
+- calculates absolute and squared difference between estimated and true survival/hazard curves under flex surv models with 0-1 internal knots.
+- identifies the best fitting flex surv model in each simulated data set.
+- plots estimated survival/hazard curves from 1000 simulations (from the best fitting model) for comparison with the true curves.
+- calculates coverage based on the best fitting model in each simulated data set. 
